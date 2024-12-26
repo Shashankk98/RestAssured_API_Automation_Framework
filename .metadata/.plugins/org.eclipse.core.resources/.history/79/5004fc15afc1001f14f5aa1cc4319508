@@ -1,0 +1,50 @@
+package com.notes;
+
+import java.io.File;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import io.restassured.RestAssured;
+import io.restassured.path.xml.XmlPath;
+import io.restassured.response.Response;
+
+public class All_Soap_Request_Tcs {
+
+	@Test
+	public void All_Operations() {
+
+		File input = new File(".\\TestData\\SoapRequestFile.xml");
+		RestAssured.baseURI = "http://www.dneonline.com";
+
+		Response response = given().header("Content-Type", "text/xml").and().body(input).when().post("/calculator.asmx")
+				.then().statusCode(200).and().log().all().extract().response();
+
+		XmlPath xmlpath = new XmlPath(response.asString());// Converting string into XML path to assert
+		
+		//Extracting and asserting Add result
+		String rate = xmlpath.getString("AddResult");
+		Assert.assertEquals("10", rate);
+		System.out.println("Add value returned is: " + rate);
+		
+		// Extracting and asserting Subtract result
+        String subtractResult = xmlpath.getString("SubtractResult");
+        Assert.assertEquals("5", subtractResult);
+        System.out.println("Subtract value returned is: " + subtractResult);
+        
+        // Extracting and asserting Multiply result
+        String multiplyResult = xmlpath.getString("MultiplyResult");
+        Assert.assertEquals("25", multiplyResult);
+        System.out.println("Multiply value returned is: " + multiplyResult);
+
+        // Extracting and asserting Divide result
+        String divideResult = xmlpath.getString("DivideResult");
+        Assert.assertEquals("2", divideResult);
+        System.out.println("Divide value returned is: " + divideResult);
+	}
+	
+
+	
+	
+
+}

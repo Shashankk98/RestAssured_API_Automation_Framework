@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="io.restassured.http.Method"/>
+    <fullyQualifiedTypeName name="com.notes.Notes_TestData"/>
+</qualifiedTypeNameHistroy>

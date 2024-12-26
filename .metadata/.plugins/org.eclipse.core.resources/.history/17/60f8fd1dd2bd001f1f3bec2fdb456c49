@@ -1,0 +1,11 @@
+package com.Countries;
+
+public class Snippet {
+	   JsonPath jsonPathEvaluator = response.getBody().jsonPath();
+	  String iso_name_act=jsonPathEvaluator.get("data.attributes.iso_name").toString();
+	  Assert.assertEquals(iso_name_act, "INDIA");
+	
+	  String name_act=jsonPathEvaluator.get("data.attributes.name").toString();
+	  Assert.assertEquals(name_act, "India");
+}
+

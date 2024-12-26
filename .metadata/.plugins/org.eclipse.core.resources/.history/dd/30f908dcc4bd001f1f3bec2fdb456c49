@@ -1,0 +1,9 @@
+package com.Countries;
+
+import org.testng.annotations.Test;
+
+public class DefaultCountry {
+  @Test
+  public void f() {
+  }
+}

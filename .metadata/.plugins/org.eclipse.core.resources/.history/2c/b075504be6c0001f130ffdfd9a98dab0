@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_TCs"/>
+      <class name="com.notes.Create_Notes_Using_File_UsingBaseClass"/>
+      <class name="com.notes.Create_Notes_Using_File"/>
+      <class name="com.notes.Create_Unique_Notes"/>
+      <class name="com.notes.Create_CreateNotes"/>
+      <class name="com.notes.CreateNotesCallingBAseClass"/>
+      <class name="com.notes.Delete_All_Notes_Before_Creating"/>
+      <class name="com.notes.Delete_Notes_Using_UI"/>
+      <class name="com.notes.DeleteNotes"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      <class name="com.notes.Create_Notes_All_Negative_TCs2"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

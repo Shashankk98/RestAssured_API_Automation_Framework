@@ -1,0 +1,9 @@
+package com.notes;
+
+import org.testng.annotations.Test;
+
+public class LogIn_CreateToken {
+  @Test
+  public void f() {
+  }
+}

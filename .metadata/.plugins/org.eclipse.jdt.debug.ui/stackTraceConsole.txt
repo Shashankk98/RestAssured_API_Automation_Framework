@@ -1,0 +1,11 @@
+	@DataProvider(name="login_tcs")
+	public Object[][] loginTestData(){
+		// Two dimensional object
+	    return new Object[][] {
+	            {"tanveer@abc.com","Welcome@123",200,"Login successful"},
+	            {"","Welcome@123",400,"A valid email address is required"},
+	            {"tanveer@abc.com","",400,"Password must be between 6 and 30 characters"},
+	            {"tanveer@abccom","Welcome@123",400,"A valid email address is required"},
+	            {"tanveer@abc.com","Welcome",401,"Incorrect email address or password"}
+	            };
+	}
